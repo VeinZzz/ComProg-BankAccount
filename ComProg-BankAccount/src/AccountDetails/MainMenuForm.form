@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MainMenuForm">
+  <grid id="27dc6" binding="mainFrame" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="812" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-792100"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="6ad90" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="North"/>
+        <properties>
+          <background color="-1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="d697f" class="javax.swing.JLabel" binding="bankAccountTitle">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="18"/>
+              <foreground color="-15656692"/>
+              <text value="Bank Account Management System"/>
+            </properties>
+          </component>
+          <hspacer id="4a386">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="4054e" class="javax.swing.JButton" binding="signOutButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <foreground color="-15656692"/>
+              <text value="Sign Out"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="2b" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-792100"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="ba287" class="javax.swing.JLabel" binding="accountBalance">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4160174"/>
+              <enabled value="true"/>
+              <font size="22" style="1"/>
+              <foreground color="-1"/>
+              <text value="&lt;html&gt;&#10;  &lt;div style=&quot;padding: 10px;&quot;&gt;&#10;    &lt;span style=&quot;font-size: 12px; color: white;&quot;&gt;Full name&lt;br&gt;Personal Savings *2340&lt;/span&gt;&#10;    &lt;span style=&quot;float: right; text-align: right;&quot;&gt;&#10;      &lt;span style=&quot;font-size: 12px; color: white;&quot;&gt;Account Balance&lt;/span&gt;&lt;br&gt;&#10;      &lt;span style=&quot;font-size: 18px; color: white; font-weight: bold;&quot;&gt;PHP 100,000&lt;/span&gt;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/html&gt;"/>
+            </properties>
+          </component>
+          <component id="d63da" class="javax.swing.JButton" binding="depositWithdrawButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4160174"/>
+              <font size="22" style="1"/>
+              <text value="Deposit/Withdraw"/>
+            </properties>
+          </component>
+          <component id="23c20" class="javax.swing.JButton" binding="accountDetailsButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="307" height="34"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-4160174"/>
+              <font size="22" style="1"/>
+              <text value="Account Details"/>
+            </properties>
+          </component>
+          <component id="793d5" class="javax.swing.JButton" binding="transactionHistoryButton" default-binding="true">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4160174"/>
+              <font size="22" style="1"/>
+              <text value="Transaction History"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
