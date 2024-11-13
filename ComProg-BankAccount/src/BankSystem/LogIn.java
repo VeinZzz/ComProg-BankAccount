@@ -4,24 +4,24 @@ import javax.swing.*;
 import java.awt.event.*;
 
 public class LogIn extends JFrame {
-    JPanel logInPanel;         // Linked from GUI form
-    private JPanel infoFields;         // Linked from GUI form
-    private JTextField usernameField;  // Linked from GUI form
+    JPanel logInPanel;               // Linked from GUI form
+    private JPanel infoFields;        // Linked from GUI form
+    private JTextField usernameField; // Linked from GUI form
     private JPasswordField passwordField; // Linked from GUI form
-    private JPanel btnPanel;           // Linked from GUI form
-    private JButton logInBtn;          // Linked from GUI form
-    private JButton signUpBtn;         // Linked from GUI form
-    private JLabel logInLabel;         // Linked from GUI form
+    private JPanel btnPanel;          // Linked from GUI form
+    private JButton logInBtn;         // Linked from GUI form
+    private JButton signUpBtn;        // Linked from GUI form
+    private JLabel logInLabel;        // Linked from GUI form
 
     public LogIn() {
-        setTitle("Log In");
+        logInPanel.setSize(600, 800);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        setContentPane(logInPanel);  // Use logInPanel from LogIn.form
-        pack();                     // Adjust window size to fit components
-        setLocationRelativeTo(null); // Center the form on the screen
-        setVisible(true);           // Display the form
+        setContentPane(logInPanel);
+        pack();
+        setLocationRelativeTo(null);
+        setVisible(true);
 
-        setupListeners();           // Setup button listeners
+        setupListeners();
     }
 
     // Set up listeners for login and sign-up actions
@@ -44,6 +44,9 @@ public class LogIn extends JFrame {
 
     // Method to open the Main Menu form
     private void openMainMenu() {
+        // Close the LogIn frame
+        dispose();
+
         JFrame mainMenuFrame = new JFrame("Main Menu");
         MainMenuForm mainMenuForm = new MainMenuForm(); // Initialize MainMenuForm
         mainMenuFrame.setContentPane(mainMenuForm.getMainFrame()); // Set mainFrame as the content pane
@@ -51,9 +54,6 @@ public class LogIn extends JFrame {
         mainMenuFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         mainMenuFrame.setLocationRelativeTo(null); // Center the window
         mainMenuFrame.setVisible(true);
-
-        // Close the LogIn frame
-        dispose();
     }
 
     // Method to open the Sign-Up form

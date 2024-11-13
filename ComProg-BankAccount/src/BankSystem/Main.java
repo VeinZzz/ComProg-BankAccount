@@ -8,12 +8,14 @@ public class Main extends JFrame {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
+                new LogIn();
                 JFrame frame = new JFrame("Bank Account Management System");
                 frame.setContentPane(new LogIn().logInPanel);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.pack();
                 frame.setLocationRelativeTo(null); // Center the frame on the screen
                 frame.setVisible(true);
+                frame.setSize(350,200);
             }
         });
     }

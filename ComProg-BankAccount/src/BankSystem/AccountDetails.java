@@ -34,7 +34,7 @@ public class AccountDetails extends JFrame {
         setTitle("Account Details");
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setContentPane(mainPanel);  // Set mainPanel from the GUI form as content pane
-        pack();                     // Adjust window size to fit its components
+        pack();
         setLocationRelativeTo(null); // Center the window on the screen
         setVisible(true);           // Display the form
 
@@ -45,7 +45,6 @@ public class AccountDetails extends JFrame {
     private void setupListeners() {
         // Sign Out button action
         signOutButton.addActionListener(e -> {
-            new LogIn(); // Open LogIn form
             dispose();   // Close the AccountDetails window
         });
 

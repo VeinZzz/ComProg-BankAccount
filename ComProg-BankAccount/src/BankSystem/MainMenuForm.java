@@ -27,6 +27,7 @@ public class MainMenuForm extends JFrame {
             public void mouseClicked(MouseEvent e) {
                 AccountDetails accountDetails = new AccountDetails();
                 accountDetails.setVisible(true); // Make sure to set the form visible
+                accountDetails.setLocationRelativeTo(null);
                 closeCurrentForm();
             }
         });
@@ -44,8 +45,10 @@ public class MainMenuForm extends JFrame {
         signOutButton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
+                dispose();
                 LogIn logIn = new LogIn();
                 logIn.setVisible(true); // Make sure to set the form visible
+                logIn.setLocationRelativeTo(null);
                 closeCurrentForm();
             }
         });
